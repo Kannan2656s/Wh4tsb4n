@@ -1,0 +1,9 @@
+--How to install--
+#
+#
+git clone https://github.com/47hxl-53r/Wh4tsb4n
+#
+cd Numb3r_b4nn3r
+#
+#
+python3 main.py

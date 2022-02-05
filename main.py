@@ -55,13 +55,13 @@ def program():
             if (option=="1"):
                 delay_print(f"{Fore.YELLOW}Are you sure to ban "+realnumber+"?\n")
                 yesorno1 = input("(Y/N): ")
-                delay_print("Sorry bro, next time . . .")
+                delay_print("Banning of "+realname+" is successfull!")
                 data.lockout()
 
             elif (option=="2"):
                 delay_print(f"{Fore.YELLOW}Gather information for "+realnumber+"?\n")
                 yesorno2 = input("(Y/N): ")
-                delay_print("Sorry bro, next time . . .")
+                delay_print("Name: 47hxl-53r\nStatus: HACKED!")
                 data.lockout()
 
             else:

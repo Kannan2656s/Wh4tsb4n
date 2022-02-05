@@ -40,48 +40,48 @@ banner_display()
 #
 #
 def program():
-    number = input("[+] Number: +91")
+    number = input("[+] Number: +91\n")
     realnumber = "+91"+number
     check = number.isnumeric()
     lennber = len(number)
     if (check == True):
         if (lennber < 10 or lennber > 10):
-            delay_print(f"{Fore.RED}Number must be 10 digits")
+            delay_print(f"{Fore.RED}Number must be 10 digits\n")
             program()
         elif (lennber==10):
-            delay_print(f"{Fore.YELLOW}1) Ban number")
-            delay_print(f"{Fore.YELLOW}2) Information about this number")
+            delay_print(f"{Fore.YELLOW}1) Ban number\n")
+            delay_print(f"{Fore.YELLOW}2) Information about this number\n")
             option = input(f"{Fore.YELLOW}[+] Choose an option: ")
             if (option=="1"):
-                delay_print(f"{Fore.YELLOW}Are you sure to ban "+realnumber+"?")
+                delay_print(f"{Fore.YELLOW}Are you sure to ban "+realnumber+"?\n")
                 yesorno1 = input("(Y/N): ")
                 if (yesorno1 == "Y"):
                     if (yesorno1 == "y"):
-                        delay_print(f"{Fore.WHITE}Sorry bro, next time")
+                        delay_print(f"{Fore.WHITE}Sorry bro, next time\n")
                         data.lockout()
                 else:
-                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option")
+                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option\n")
                     data.lockout()
 
             elif (option=="2"):
-                delay_print(f"{Fore.YELLOW}Gather information for "+realnumber+"?")
+                delay_print(f"{Fore.YELLOW}Gather information for "+realnumber+"?\n")
                 yesorno2 = input("(Y/N): ")
                 if (yesorno2 == "Y"):
                     if (yesorno2 == "y"):
-                        delay_print(f"{Fore.WHITE}Sorry bro, next time")
+                        delay_print(f"{Fore.WHITE}Sorry bro, next time\n")
                         data.lockout()
                 else:
-                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option")
+                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option\n")
                     data.lockout()
 
 
             else:
-                delay_print(f"{Fore.RED}It's not an option")
+                delay_print(f"{Fore.RED}It's not an option\n")
                 program()
 
 
     else:
-        delay_print(f"{Fore.RED}Number is incorrect... Please try again . . .")
-        print(f"{Fore.WHITE}")
+        delay_print(f"{Fore.RED}Number is incorrect... Please try again . . .\n")
+        print("")
         program()
 program()

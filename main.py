@@ -55,25 +55,14 @@ def program():
             if (option=="1"):
                 delay_print(f"{Fore.YELLOW}Are you sure to ban "+realnumber+"?\n")
                 yesorno1 = input("(Y/N): ")
-                if (yesorno1 == "Y"):
-                    if (yesorno1 == "y"):
-                        delay_print(f"{Fore.WHITE}Sorry bro, next time\n")
-                        data.lockout()
-                else:
-                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option\n")
-                    data.lockout()
+                delay_print("Sorry bro, next time . . .")
+                data.lockout()
 
             elif (option=="2"):
                 delay_print(f"{Fore.YELLOW}Gather information for "+realnumber+"?\n")
                 yesorno2 = input("(Y/N): ")
-                if (yesorno2 == "Y"):
-                    if (yesorno2 == "y"):
-                        delay_print(f"{Fore.WHITE}Sorry bro, next time\n")
-                        data.lockout()
-                else:
-                    delay_print(f"{Fore.YELLOW}Here is the punishment for other option\n")
-                    data.lockout()
-
+                delay_print("Sorry bro, next time . . .")
+                data.lockout()
 
             else:
                 delay_print(f"{Fore.RED}It's not an option\n")

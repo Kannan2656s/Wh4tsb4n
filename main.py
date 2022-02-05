@@ -84,3 +84,4 @@ def program():
         delay_print(f"{Fore.RED}Number is incorrect... Please try again . . .")
         print(f"{Fore.WHITE}")
         program()
+program()
